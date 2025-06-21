@@ -18,6 +18,7 @@ const Scoreboard = () => {
         id="reset-button"
         onClick={() => {
           setGame(false);
+          setScore(0);
         }}
       >
         Restart
