@@ -1,9 +1,59 @@
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-text p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5px;
+}
 
 .hole {
+  width: 150px;
+  height: 150px;
   background: url("/hole.png") no-repeat center/contain;
 }
 
 .mole {
+  width: 150px;
+  height: 150px;
   background-image: url("/mole.png");
 }
 
+#score-and-button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#score {
+  border: 2px solid black;
+  height: 17px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+#reset-button {
+  background-color: white;
+  border: 2px solid black;
+  width: 150px;
+  height: 20px;
+  font-size: 12px;
+}
+
+#mole-holes ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  list-style-type: none;
+}
+
+#mole-holes {
+  margin-left: -50px;
+}
