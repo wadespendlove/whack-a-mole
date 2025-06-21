@@ -9,6 +9,7 @@ const WhackAMole = () => {
     setMoleIndex,
     setScore,
     setGame,
+    restartMole,
   } = useGame();
   return (
     <>

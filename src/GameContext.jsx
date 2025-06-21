@@ -15,6 +15,11 @@ export const GameProvider = ({ children }) => {
     }
   };
 
+  const restartMole = () => {
+    const randomIndex = Math.floor(Math.random() * 9);
+    setMoleIndex(randomIndex);
+  };
+
   const value = {
     game,
     score,
@@ -23,6 +28,7 @@ export const GameProvider = ({ children }) => {
     setMoleIndex,
     setScore,
     setGame,
+    restartMole,
   };
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;

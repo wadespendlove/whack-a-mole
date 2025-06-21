@@ -9,6 +9,7 @@ const Scoreboard = () => {
     setMoleIndex,
     setScore,
     setGame,
+    restartMole,
   } = useGame();
   return (
     <div id="score-and-button">
@@ -18,6 +19,7 @@ const Scoreboard = () => {
         id="reset-button"
         onClick={() => {
           setGame(false);
+          restartMole();
           setScore(0);
         }}
       >

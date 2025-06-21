@@ -10,6 +10,7 @@ const Welcome = () => {
     setMoleIndex,
     setScore,
     setGame,
+    restartMole,
   } = useGame();
   return (
     <section id="intro">

@@ -12,6 +12,7 @@ export default function App() {
     setMoleIndex,
     setScore,
     setGame,
+    restartMole,
   } = useGame();
   if (game === false) {
     return <Welcome />;
